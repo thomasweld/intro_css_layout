@@ -1,9 +1,49 @@
-
+body {
+  margin: 10px auto;
+}
 
 li {
   list-style: none;
 }
 
+.octodex {
+  width: 1200px;
+  height: auto;
+}
+
 .octocat {
+  width: 335px;
+  float: left;
+  margin: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.octocat img {
+  width: 335px;
+  height: auto;
   border: 1px solid gray;
+}
+
+.image-number {
+  color: gray;
+  font-weight: bold;
+}
+
+.authors img {
+  width: 18px;
+  height: auto;
+}
+
+.image-caption {
+  float: right;
+  width: 240px;
+  text-align: right;
+}
+
+.authors {
+  float: right;
+}
+
+ul {
+  padding-left: 2px;
 }
