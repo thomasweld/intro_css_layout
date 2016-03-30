@@ -1,3 +1,4 @@
+
 body {
   margin: 10px auto;
 }
@@ -16,6 +17,7 @@ li {
   float: left;
   margin: 10px;
   border-bottom: 2px solid gray;
+  position: relative;
 }
 
 .octocat img {
@@ -24,9 +26,25 @@ li {
   border: 1px solid gray;
 }
 
+.octocat::after{
+  content: '';
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #8f8f8f transparent transparent transparent;
+  position: absolute;
+  clear: both;
+  left: 95%;
+  top: 90%;
+}
+
 .image-number {
   color: gray;
   font-weight: bold;
+}
+
+.image-number::before{
+    content: "#";
 }
 
 .authors img {
@@ -46,4 +64,8 @@ li {
 
 ul {
   padding-left: 2px;
+}
+
+.image-footer {
+      margin: 7px 2px;
 }
