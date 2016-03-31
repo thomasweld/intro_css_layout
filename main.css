@@ -1,6 +1,13 @@
 
 body {
   margin: 10px auto;
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 li {
@@ -52,14 +59,18 @@ li {
   height: auto;
 }
 
+.authors {
+  float: right;
+}
+
+.authors li {
+  vertical-align: middle;
+}
+
 .image-caption {
   float: right;
   width: 240px;
   text-align: right;
-}
-
-.authors {
-  float: right;
 }
 
 ul {
